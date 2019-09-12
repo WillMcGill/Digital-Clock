@@ -12,21 +12,17 @@ function updateTime(){
     if (TimeNow.getHours() > 12){
         if (TimeNow.getHours() - 12 < 10){
             document.getElementById("Hour").innerHTML = '0' + (TimeNow.getHours() - 12);
-            document.getElementById("AmPm").innerHTML = 'PM';
             }
             else {
                 document.getElementById("Hour").innerHTML = TimeNow.getHours() - 12;
-                document.getElementById("AmPm").innerHTML = 'PM';
             }
     }
     else{
             if (TimeNow.getHours() < 10){
             document.getElementById("Hour").innerHTML = '0' + TimeNow.getHours();
-            document.getElementById("AmPm").innerHTML = 'AM';
             }
             else {
                 document.getElementById("Hour").innerHTML = TimeNow.getHours();
-                document.getElementById("AmPm").innerHTML = 'AM';
             }
         }
 //Minutes
@@ -43,4 +39,13 @@ function updateTime(){
     else{
         document.getElementById("Sec").innerHTML = '0' + TimeNow.getSeconds();
         }
+    
+
+//AM or PM
+    if (TimeNow.getHours() > 11 &&  TimeNow.getHours() < 23){
+        document.getElementById("AmPm").innerHTML = 'PM';
+        }
+    else{
+        document.getElementById("AmPm").innerHTML = 'AM';
     }
+}
