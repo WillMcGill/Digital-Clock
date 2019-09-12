@@ -1,0 +1,19 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15vw;
+    background-color: black;
+    color: red;
+
+    display: grid;
+    grid-template-rows: 20vh 20vh 60vh;
+    grid-template-columns: 15vw 70vw 15vw;
+}
+
+section{
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
