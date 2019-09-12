@@ -1,6 +1,7 @@
 body{
     font-family: 'Quicksand', sans-serif;
-    font-size: 15vw;
+    font-size: 10vw;
+    text-align: center;
     background-color: black;
     color: red;
 
@@ -14,6 +15,6 @@ section{
     grid-column-start: 2;
 
     display:grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 20% 5% 20% 5% 20% 30%;
 }
 
