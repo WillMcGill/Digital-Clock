@@ -42,7 +42,7 @@ function updateTime(){
     
 
 //AM or PM
-    if (TimeNow.getHours() > 11 &&  TimeNow.getHours() < 23){
+    if (TimeNow.getHours() > 11 &&  TimeNow.getHours() < 24){
         document.getElementById("AmPm").innerHTML = 'PM';
         }
     else{
